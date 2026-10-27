@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Murali Krishna Kummagiri | React JS Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Murali Krishna Kummagiri, a React JS developer skilled in HTML, CSS, JavaScript and React.js, building responsive interfaces with reusable components." />
+    <meta name="author" content="Murali Krishna Kummagiri" />
+    <meta name="theme-color" content="#070a18" />
+    <!-- After deploying, add: <link rel="canonical" href="https://YOUR-REAL-DOMAIN/" /> and use the same URL (absolute) in og:url and og:image. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Murali Krishna Kummagiri | React JS Developer" />
+    <meta property="og:description" content="React JS developer building responsive, component-based web interfaces. Explore projects, skills and resume." />
+    <meta property="og:image" content="/images/og-image.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <script>
+      // Set theme before first paint to avoid a flash of the wrong theme.
+      try {
+        var t = localStorage.getItem("theme");
+        if (t !== "light" && t !== "dark") t = "dark";
+        document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

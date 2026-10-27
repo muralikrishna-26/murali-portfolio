@@ -1,0 +1,46 @@
+@media (max-width: 1024px) {
+  .bento { grid-template-columns: repeat(2, 1fr); }
+  .bento-main, .bento-approach { grid-column: span 2; grid-row: auto; }
+  .contact-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 900px) {
+  .nav-toggle, .nav-resume-mobile { display: inline-grid; }
+  .nav-resume { display: none; }
+  .nav-links { position: fixed; inset: var(--nav-h) 0 auto 0; flex-direction: column; align-items: stretch; gap: 0.2rem; padding: 1rem 1.25rem 1.5rem; background: var(--surface-solid); border-bottom: 1px solid var(--border); max-height: calc(100svh - var(--nav-h)); overflow-y: auto; transform: translateY(-120%); visibility: hidden; transition: transform 0.3s var(--ease), visibility 0.3s; }
+  .nav-links.is-open { transform: none; visibility: visible; }
+  .nav-links a:not(.btn) { display: block; padding: 0.9rem 1rem; font-size: 1rem; }
+  .nav-links a.is-active::after { display: none; }
+  .nav-links a.is-active { background: rgba(139, 92, 246, 0.16); }
+  .nav-resume-mobile { display: block; margin-top: 0.6rem; }
+  .nav-resume-mobile .btn { width: 100%; }
+
+  .hero { padding-top: calc(var(--nav-h) + 1.5rem); text-align: left; }
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero-portrait { order: -1; }
+  .portrait-frame { width: min(260px, 66vw); }
+  .scroll-indicator { display: none; }
+}
+
+@media (max-width: 600px) {
+  .section { padding: var(--space-5) 0; }
+  .bento { grid-template-columns: 1fr 1fr; gap: 0.7rem; }
+  .projects-grid { grid-template-columns: 1fr; }
+  .search { flex-basis: 100%; }
+  .hero-ctas .btn { flex: 1 1 100%; }
+  .timeline { padding-left: 2.3rem; }
+  .timeline-dot { left: -2.3rem; }
+  .terminal-fab span { display: none; }
+  .terminal-fab { width: 46px; padding: 0; justify-content: center; }
+  .terminal { left: 0.8rem; bottom: 0.8rem; width: calc(100vw - 1.6rem); }
+  .palette-backdrop { padding-top: 8vh; }
+  .modal-media { aspect-ratio: 16 / 9; }
+  .chip-a { left: -2%; } .chip-b { right: -2%; }
+}
+
+@media (max-width: 360px) {
+  .container, .container.narrow { width: calc(100% - 1.5rem); }
+  .navbar-inner { gap: 0.4rem; }
+  .logo-text { display: none; }
+  .bento { grid-template-columns: 1fr; }
+}
